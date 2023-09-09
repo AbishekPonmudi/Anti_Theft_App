@@ -70,7 +70,7 @@ public class EnterPin extends AppCompatActivity {
         final String password = sharedpreferences.getString("passwordKey", "");
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
-        final MediaPlayer mPlayer = MediaPlayer.create(EnterPin.this, R.raw.siren);
+        final MediaPlayer mPlayer = MediaPlayer.create(EnterPin.this, R.raw.beepbeep);
         AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
         audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, 20, 0);
         mPlayer.start();

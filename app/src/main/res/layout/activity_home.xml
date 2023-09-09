@@ -278,7 +278,9 @@
                     android:id="@+id/headset1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
                     android:layout_marginTop="5dp"
+                    android:layout_marginEnd="13dp"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="10dp">
 
@@ -287,20 +289,11 @@
                         android:layout_height="wrap_content"
                         android:elevation="10dp">
 
-                        <ImageView
-                            android:id="@+id/i6"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:layout_marginTop="10dp"
-                            android:elevation="10dp"
-                            android:src="@drawable/proximity" />
-
                         <TextView
                             android:id="@+id/headset"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="20dp"
-                            android:layout_toRightOf="@+id/i6"
                             android:layout_marginTop="10dp"
                             android:fontFamily="sans-serif-black"
                             android:letterSpacing="0.03"
@@ -308,8 +301,6 @@
                             android:textColor="#000000"
                             android:textSize="18sp"
                             android:textStyle="bold" />
-
-
 
 
                     </RelativeLayout>
@@ -354,24 +345,34 @@
                             android:id="@+id/tt7"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="-7dp"
+                            android:layout_marginTop="10dp"
                             android:layout_toEndOf="@+id/i7"
                             android:fontFamily="sans-serif-black"
                             android:letterSpacing="0.03"
-                            android:layout_marginTop="10dp"
-                            android:text="Deep Clean"
+                            android:text="Security Scan"
                             android:textColor="#000000"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="60dp"
+                            android:fontFamily="sans-serif-black"
+                            android:text="This feature turn ON security scan every Download"
+                            android:textSize="12dp" />
+
                         <Switch
                             android:id="@+id/sMotion2"
                             android:layout_width="wrap_content"
-                            android:layout_height="93dp"
+                            android:layout_height="42dp"
                             android:layout_alignParentEnd="true"
                             android:layout_alignParentBottom="true"
-                            android:layout_marginEnd="8dp"
-                            android:layout_marginBottom="1dp"
-                            android:text="Start"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="-34dp"
+                            android:text="Turn On"
                             android:textColor="#000000"
                             android:textSize="12sp"
                             tools:ignore="UseSwitchCompatOrMaterialXml" />

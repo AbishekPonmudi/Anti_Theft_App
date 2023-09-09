@@ -28,11 +28,7 @@ public class SetPin extends AppCompatActivity {
     @Override
     public void onResume() {
         super.onResume();
-//        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-//        String email = preferences.getString("Email", "");
-//        Toast.makeText(getApplicationContext(), "near"+email, Toast.LENGTH_SHORT).show();
-//        mSensorManager.registerListener(this, mProximity,
-//                SensorManager.SENSOR_DELAY_UI);
+
     }
 
     @Override

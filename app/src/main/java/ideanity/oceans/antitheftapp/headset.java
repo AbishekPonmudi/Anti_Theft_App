@@ -30,16 +30,18 @@ public class headset extends AppCompatActivity {
                     state = intent.getIntExtra("state", -1);
                     if (state == 0) {
                         Microphone_Plugged_in = true;
-                        Toast.makeText(getApplicationContext(), "Microphone unplugged", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Headset unplugged", Toast.LENGTH_LONG).show();
                         if (mediaPlayer == null) {
-                            mediaPlayer = MediaPlayer.create(headset.this, R.raw.alarm);
+                            mediaPlayer = MediaPlayer.create(headset.this, R.raw.beepbeep);
                             mediaPlayer.setLooping(true);
                             mediaPlayer.start();
                         }
+                        // Finish the activity when the headset is unplugged
+                        finish();
                     }
                     if (state == 1) {
                         Microphone_Plugged_in = false;
-                        Toast.makeText(getApplicationContext(), "Microphone plugged in", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Headset plugged in", Toast.LENGTH_LONG).show();
                         if (mediaPlayer != null && mediaPlayer.isPlaying()) {
                             mediaPlayer.stop();
                             mediaPlayer.release();
@@ -73,5 +75,12 @@ public class headset extends AppCompatActivity {
             mediaPlayer.release();
             mediaPlayer = null;
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        // Finish the activity when the user presses the back button
+        finish();
     }
 }

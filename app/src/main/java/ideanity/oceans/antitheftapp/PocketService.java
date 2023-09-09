@@ -38,7 +38,7 @@ public class PocketService  extends Service implements SensorEventListener {
     public int onStartCommand(Intent intent, int flags, int startId) {
 
 
-//        startInForeground();
+
         if (Build.VERSION.SDK_INT >= 26) {
             String NOTIFICATION_CHANNEL_ID = "example.permanence";
             String channelName = "Background Service";

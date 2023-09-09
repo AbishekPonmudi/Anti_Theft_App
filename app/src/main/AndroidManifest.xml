@@ -31,12 +31,6 @@
         <activity
             android:name=".EnterPin"
             android:theme="@style/AppTheme" />
-        <activity
-            android:name=".ResetPin"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".ForgotPin"
-            android:theme="@style/AppTheme" />
 
         <service
             android:name=".PocketService"

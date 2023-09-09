@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
                 String value = sharedpreferences.getString("passwordKey", "");
-//                    Toast.makeText(Splash.this, value.toString(), Toast.LENGTH_SHORT).show();;
+
                 if (value.length() > 0) {
                     Intent it = new Intent(MainActivity.this, HomeActivity.class);
                     startActivity(it);
