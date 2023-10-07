@@ -1,7 +1,5 @@
 # Anti_Theft_App
 
-# Anti_Theft_App
-
 ![App Logo](app_logo.png)
 
 **Anti_Theft_App** is a cutting-edge mobile application designed to provide robust anti-theft and security features for your device. With its advanced tracking and protection capabilities, you can have peace of mind knowing your device and personal data are safe even in the event of theft or loss.
