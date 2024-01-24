@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="ideanity.oceans.antitheftapp">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.REORDER_TASKS" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -17,14 +18,17 @@
         android:theme="@style/AppTheme"
         tools:replace="android:allowBackup">
         <activity
+            android:name=".notify"
+            android:exported="true" />
+        <activity
             android:name=".headset"
             android:exported="false" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".SetPin" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -36,6 +40,10 @@
             android:name=".PocketService"
             android:enabled="true"
             android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

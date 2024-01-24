@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/AliceBlue"
     android:paddingLeft="50dp"
     android:paddingTop="20dp"
     android:paddingRight="50dp"
@@ -19,12 +19,12 @@
 
         <ImageView
             android:id="@+id/imageButton3"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
             android:layout_gravity="center"
-            android:layout_margin="0dp"
+            android:layout_margin="10dp"
             android:adjustViewBounds="true"
-            android:background="@drawable/antithefthome"
+            android:background="@drawable/home"
             android:contentDescription=""
             android:padding="50dp"
             android:scaleType="centerInside"
@@ -33,10 +33,10 @@
         <TextView
             android:id="@+id/textView4"
             style="@style/Textview_style_homepage"
-            android:fontFamily="serif-monospace"
-            android:textColor="@color/black"
             android:layout_gravity="center"
-            android:text="@string/anti_theft_detection" />
+            android:fontFamily="@font/alegreya_sc"
+            android:text="@string/anti_theft_detection"
+            android:textColor="@color/black" />
 
         <ProgressBar
             android:id="@+id/pb2"
@@ -53,8 +53,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:fontFamily="sans-serif"
-        android:text="Made with 💖 India"
+        android:fontFamily="@font/alegreya_sc"
+        android:text="Made with 💖 BIT"
         android:textColor="@color/black"
         android:textSize="14dp" />
 

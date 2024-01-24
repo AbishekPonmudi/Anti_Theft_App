@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:focusableInTouchMode="true"
-    android:background="@color/WhiteSmoke"
+    android:background="@color/AliceBlue"
     tools:context=".SetPin">
 
     <ScrollView
@@ -22,7 +22,7 @@
             <androidx.cardview.widget.CardView
                 android:id="@+id/cv"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="250dp"
                 android:layout_margin="20dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="10dp">
@@ -43,7 +43,7 @@
                         android:elevation="10dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginBottom="15dp"
-                        android:text="Set Pin"
+                        android:text="SET YOUR PIN"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -70,7 +70,7 @@
                         android:elevation="10dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginBottom="15dp"
-                        android:text="Confirm Pin"
+                        android:text="CONFIRM PIN"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -121,9 +121,8 @@
                     android:id="@+id/btnSetPin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
                     android:background="@drawable/bt_uisquare"
-                    android:text="Set Pin"
+                    android:text="SET PIN"
                     android:textAllCaps="false"
                     android:textColor="@color/titletextcolor" />
             </RelativeLayout>

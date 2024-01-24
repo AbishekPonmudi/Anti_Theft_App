@@ -5,9 +5,9 @@
     android:id="@+id/activity_enter_pin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/WhiteSmoke"
+    android:background="@color/AliceBlue"
     tools:context=".EnterPin">
-    
+
     <ScrollView
         android:id="@+id/sv"
         android:layout_width="match_parent"
@@ -41,8 +41,8 @@
                         android:layout_marginBottom="15dp"
                         android:gravity="center"
                         android:text="Enter Your Pin"
-                        android:textColor="@color/DarkBlue"
-                        android:textSize="15sp"
+                        android:textColor="@color/Black"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <EditText
@@ -68,12 +68,12 @@
                 android:id="@+id/rl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:transitionName="circleTes"
                 android:layout_alignTop="@+id/cv"
                 android:layout_alignRight="@+id/cv"
                 android:layout_marginTop="-20dp"
                 android:layout_marginRight="-20dp"
-                android:elevation="10dp">
+                android:elevation="10dp"
+                android:transitionName="circleTes">
 
 
             </RelativeLayout>

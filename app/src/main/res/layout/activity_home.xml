@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/WhiteSmoke"
+    android:background="@color/AliceBlue"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -30,12 +30,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:elevation="10dp"
+        android:elevation="0dp"
         android:background="@drawable/rectangle"
         android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
+        android:layout_marginEnd="13dp"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="20dp">
 
         <ImageView
             android:id="@+id/imageButton3"
@@ -75,7 +75,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="8dp"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="10dp">
 
@@ -164,10 +164,10 @@
                         <ImageView
                             android:id="@+id/i2"
                             android:layout_width="60dp"
-                            android:layout_height="50dp"
+                            android:layout_height="100dp"
                             android:layout_marginTop="10dp"
                             android:elevation="10dp"
-                            android:src="@drawable/shake" />
+                            android:src="@drawable/motion" />
 
                         <TextView
                             android:id="@+id/tt2"
@@ -207,7 +207,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:paddingLeft="15dp"
-                android:paddingTop="15dp"
+                android:paddingTop="10dp"
                 android:elevation="10dp"
                 android:paddingRight="15dp"
                 android:layout_below="@id/r2">
@@ -227,10 +227,10 @@
                         <ImageView
                             android:id="@+id/i3"
                             android:layout_width="60dp"
-                            android:layout_height="50dp"
+                            android:layout_height="100dp"
                             android:elevation="10dp"
                             android:layout_marginTop="10dp"
-                            android:src="@drawable/charger"/>
+                            android:src="@drawable/charge"/>
 
                         <TextView
                             android:id="@+id/tt3"
@@ -279,8 +279,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="13dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="10ldp"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="10dp">
 
@@ -339,7 +339,7 @@
                             android:layout_height="50dp"
                             android:layout_marginTop="10dp"
                             android:elevation="10dp"
-                            android:src="@drawable/shake" />
+                            android:src="@drawable/security" />
 
                         <TextView
                             android:id="@+id/tt7"

@@ -48,15 +48,15 @@ public class SetPin extends AppCompatActivity {
        // etEmail = (EditText)findViewById(R.id.etEmail);
 
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-//        String email = sharedpreferences.getString("emailKey","");
+//        String email = shared-preferences.getString("emailKey","");
 //        if(email.length()>0){
 //            startActivity(new Intent(SetPin.this, MainActivity.class));
 //        }
 
 
 //        Toast.makeText(getApplicationContext(), "email:"+email, Toast.LENGTH_SHORT).show();
-//        SharedPreferences.Editor editor=sharedpreferences.edit();
-//        boolean  firstTime=sharedpreferences.getBoolean("first", true);
+//        SharedPreferences.Editor editor=shared-preferences.edit();
+//        boolean  firstTime=shared-preferences.getBoolean("first", true);
 //        if(firstTime) {
 //            editor.putBoolean("first",false);
 //            editor.commit();
@@ -100,7 +100,7 @@ public class SetPin extends AppCompatActivity {
                     SharedPreferences.Editor editor = sharedpreferences.edit();
                     //editor.putString(Email, email);
                     editor.putString(Password, confirmPin);
-                    editor.commit();
+                    editor.apply();
                     Toast.makeText(getApplicationContext(), "Password Set", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(SetPin.this, HomeActivity.class));
                     finish();
